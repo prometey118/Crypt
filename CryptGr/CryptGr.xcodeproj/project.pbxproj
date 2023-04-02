@@ -13,6 +13,7 @@
 		C497EBB029D88D19007BC715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C497EBAE29D88D19007BC715 /* Main.storyboard */; };
 		C497EBB229D88D1B007BC715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C497EBB129D88D1B007BC715 /* Assets.xcassets */; };
 		C497EBB529D88D1B007BC715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C497EBB329D88D1B007BC715 /* LaunchScreen.storyboard */; };
+		C4CE696C29DA17530056F8F4 /* SheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CE696B29DA17530056F8F4 /* SheetController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C497EBB129D88D1B007BC715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C497EBB429D88D1B007BC715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C497EBB629D88D1B007BC715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4CE696B29DA17530056F8F4 /* SheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C497EBA829D88D19007BC715 /* AppDelegate.swift */,
 				C497EBAA29D88D19007BC715 /* SceneDelegate.swift */,
 				C497EBAC29D88D19007BC715 /* ViewController.swift */,
+				C4CE696B29DA17530056F8F4 /* SheetController.swift */,
 				C497EBAE29D88D19007BC715 /* Main.storyboard */,
 				C497EBB129D88D1B007BC715 /* Assets.xcassets */,
 				C497EBB329D88D1B007BC715 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C497EBAD29D88D19007BC715 /* ViewController.swift in Sources */,
+				C4CE696C29DA17530056F8F4 /* SheetController.swift in Sources */,
 				C497EBA929D88D19007BC715 /* AppDelegate.swift in Sources */,
 				C497EBAB29D88D19007BC715 /* SceneDelegate.swift in Sources */,
 			);

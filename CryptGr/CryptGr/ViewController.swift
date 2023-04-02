@@ -50,8 +50,8 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate {
         
     }
     @objc func didTapButton() {
-        
-        
+        let vc = SheetController()
+        self.present(vc, animated: true, completion: nil)
     }
 }
 
