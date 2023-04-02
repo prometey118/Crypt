@@ -9,6 +9,9 @@ import UIKit
 
 class SheetController: UIViewController, UISheetPresentationControllerDelegate {
 
+    var datePicker = UIDatePicker()
+    var stackView = UIStackView()
+    
     override var sheetPresentationController: UISheetPresentationController{
         presentationController as! UISheetPresentationController
     }
@@ -18,11 +21,28 @@ class SheetController: UIViewController, UISheetPresentationControllerDelegate {
         view.backgroundColor = .orange
         
         sheetPresentationController.delegate = self
-        sheetPresentationController.selectedDetentIdentifier = .large
+        sheetPresentationController.selectedDetentIdentifier = .medium
         sheetPresentationController.prefersGrabberVisible = true
-        sheetPresentationController.detents = [
-            .medium(),
-        ]
+        sheetPresentationController.detents = [.medium(),]
+        
+        stackView.axis = NSLayoutConstraint.Axis.vertical
+        stackView.distribution = UIStackView.Distribution.equalSpacing
+        stackView.alignment = UIStackView.Alignment.center
+        stackView.spacing = 16
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        datePicker.locale = .current
+        datePicker.datePickerMode = .dateAndTime
+        datePicker.preferredDatePickerStyle = .compact
+        datePicker.tintColor = .systemBlue
+        
+        
+        stackView.addArrangedSubview(datePicker)
+        self.view.addSubview(stackView)
+        
+        stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         
     }
     

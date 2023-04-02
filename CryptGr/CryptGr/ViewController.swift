@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController, UISheetPresentationControllerDelegate {
     var textLabel = UILabel()
-    var datePicker = UIDatePicker()
     var stackView = UIStackView()
     
     private let button: UIButton = {
@@ -30,17 +29,13 @@ class ViewController: UIViewController, UISheetPresentationControllerDelegate {
         stackView.spacing = 16
         
         self.button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-//        datePicker.locale = .current
-//        datePicker.datePickerMode = .dateAndTime
-//        datePicker.preferredDatePickerStyle = .compact
-//        datePicker.tintColor = .systemBlue
+        
         
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         
         stackView.addArrangedSubview(textLabel)
-//        stackView.addArrangedSubview(datePicker)
         stackView.addArrangedSubview(button)
         self.view.addSubview(stackView)
         
