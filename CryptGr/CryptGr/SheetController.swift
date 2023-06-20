@@ -74,7 +74,7 @@ class SheetController: UIViewController, UISheetPresentationControllerDelegate, 
         
         
         stackView.addArrangedSubview(datePicker)
-//        stackView.addArrangedSubview(collectionView)
+        stackView.addArrangedSubview(collectionView)
         self.view.addSubview(stackView)
         
         stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
